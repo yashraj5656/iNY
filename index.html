@@ -15,57 +15,40 @@
         }
 
         body {
-            display: flex;
-            height: 100vh;
-            overflow: hidden;
-            background-color: #f4f7fa;
             color: #333;
         }
 
-        aside {
-            width: 280px;
-            background-color: #1f1f2e;
+        header {
+            background-color: #222;
             color: #fff;
-            padding: 40px 25px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
-        }
-
-        aside h1 {
-            color: #00bcd4;
-            font-size: 2.2rem;
-            margin-bottom: 30px;
-        }
-
-        aside nav a {
-            display: block;
-            color: #fff;
-            text-decoration: none;
-            margin: 15px 0;
-            font-size: 1.1rem;
-            transition: color 0.3s ease;
-        }
-
-        aside nav a:hover {
-            color: #00bcd4;
-        }
-
-        main {
-            flex: 1;
-            overflow-y: auto;
-            background: #fff;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #00bcd4, #0097a7);
-            color: #fff;
+            padding: 20px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 80px;
-            border-bottom-left-radius: 40px;
+        }
+
+        header h1 {
+            color: #00bcd4;
+            font-size: 2rem;
+        }
+
+        header nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        header nav a:hover {
+            color: #00bcd4;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px;
         }
 
         .hero-text {
@@ -73,29 +56,23 @@
         }
 
         .hero-text h2 {
-            font-size: 3.5rem;
+            font-size: 3rem;
+            color: #333;
             margin-bottom: 20px;
         }
 
         .hero-text p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 30px;
         }
 
         .hero-text button {
-            padding: 12px 35px;
-            background-color: #fff;
-            color: #00bcd4;
+            padding: 10px 30px;
+            background-color: #00bcd4;
+            color: #fff;
             border: none;
-            border-radius: 30px;
-            font-weight: 600;
-            font-size: 1rem;
+            border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .hero-text button:hover {
-            background-color: #e0f7fa;
         }
 
         .hero-image {
@@ -106,17 +83,16 @@
         .hero-image img {
             max-width: 400px;
             border-radius: 20px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
         }
 
         section {
-            padding: 60px;
+            padding: 40px 60px;
         }
 
         h3.section-title {
             text-align: center;
-            font-size: 2.4rem;
-            margin-bottom: 50px;
+            font-size: 2rem;
+            margin-bottom: 40px;
             color: #222;
         }
 
@@ -124,41 +100,35 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 15px;
         }
 
         .service-buttons div {
             background-color: #00bcd4;
             color: #fff;
-            padding: 24px;
+            padding: 20px;
             border-radius: 50%;
-            width: 110px;
-            height: 110px;
+            width: 100px;
+            height: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             text-align: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            transition: transform 0.3s ease;
-        }
-
-        .service-buttons div:hover {
-            transform: translateY(-5px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
 
         .package {
             background-color: #fff;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
-            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
         }
 
         .package h4 {
             color: #0097a7;
-            margin-bottom: 15px;
-            font-size: 1.5rem;
+            margin-bottom: 10px;
         }
 
         .package ul {
@@ -173,29 +143,23 @@
         }
 
         footer {
-            background-color: #1f1f2e;
+            background-color: #222;
             color: #fff;
             text-align: center;
-            padding: 25px;
-            font-size: 0.9rem;
+            padding: 20px;
         }
     </style>
 </head>
 
 <body>
-    <aside>
-        <div>
-            <h1>iNY</h1>
-            <nav>
-                <a href="#services">Services</a>
-                <a href="#packages">Packages</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-        <div style="font-size: 0.8rem;">
-            <p>inystudio1717@gmail.com</p>
-        </div>
-    </aside>
+    <header>
+        <h1>iNY</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#packages">Packages</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
     <main>
         <div class="hero">
@@ -205,7 +169,7 @@
                 <button onclick="document.getElementById('packages').scrollIntoView({behavior: 'smooth'});">Get Started</button>
             </div>
             <div class="hero-image">
-                <img src="https://raw.githubusercontent.com/yashraj5656/iNY/84b2940dd778c96673c0c5d324bc3cf0273c26c9/iny.png" alt="iNY">
+                <img src="https://github.com/yashraj5656/iNY/blob/84b2940dd778c96673c0c5d324bc3cf0273c26c9/iny.png" alt="iNY">
             </div>
         </div>
 
