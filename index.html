@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iNY - Creative Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        aside {
+            width: 280px;
+            background-color: #1f1f2e;
+            color: #fff;
+            padding: 40px 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+        aside h1 {
+            color: #00bcd4;
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+        }
+
+        aside nav a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin: 15px 0;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        aside nav a:hover {
+            color: #00bcd4;
+        }
+
+        main {
+            flex: 1;
+            overflow-y: auto;
+            background: #fff;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #00bcd4, #0097a7);
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px;
+            border-bottom-left-radius: 40px;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h2 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-text button {
+            padding: 12px 35px;
+            background-color: #fff;
+            color: #00bcd4;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-text button:hover {
+            background-color: #e0f7fa;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            padding: 60px;
+        }
+
+        h3.section-title {
+            text-align: center;
+            font-size: 2.4rem;
+            margin-bottom: 50px;
+            color: #222;
+        }
+
+        .service-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-buttons div {
+            background-color: #00bcd4;
+            color: #fff;
+            padding: 24px;
+            border-radius: 50%;
+            width: 110px;
+            height: 110px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.95rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .service-buttons div:hover {
+            transform: translateY(-5px);
+        }
+
+        .package {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
+        }
+
+        .package h4 {
+            color: #0097a7;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .package ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .package ul li::before {
+            content: '✔';
+            margin-right: 10px;
+            color: #00bcd4;
+        }
+
+        footer {
+            background-color: #1f1f2e;
+            color: #fff;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <div>
+            <h1>iNY</h1>
+            <nav>
+                <a href="#services">Services</a>
+                <a href="#packages">Packages</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <div style="font-size: 0.8rem;">
+            <p>inystudio1717@gmail.com</p>
+        </div>
+    </aside>
+
+    <main>
+        <div class="hero">
+            <div class="hero-text">
+                <h2>Sit Back & Relax, We Will</h2>
+                <p>Design, Deliver & Grow Your Online Business</p>
+                <button onclick="document.getElementById('packages').scrollIntoView({behavior: 'smooth'});">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/vUuUtKqDrY9gAbaD2czK9KrN" alt="iNY">
+            </div>
+        </div>
+
+        <section id="services">
+            <h3 class="section-title">Our Core Services</h3>
+            <div class="service-buttons">
+                <div>Logo & Brand</div>
+                <div>Ad Design</div>
+                <div>Templates</div>
+                <div>Web Dev</div>
+                <div>Strategy</div>
+                <div>Email Mktg</div>
+            </div>
+        </section>
+
+        <section id="packages">
+            <h3 class="section-title">Service Packages</h3>
+            <div class="package">
+                <h4>Website Development</h4>
+                <ul>
+                    <li>Starter – $200: 5-page responsive site, WhatsApp & Instagram, SEO.</li>
+                    <li>E-Commerce Add-On – $70: Cart + Payment Gateway.</li>
+                    <li>Copywriting – $40: 5 pages with CTA copy.</li>
+                    <li>Premium – $270: All above + image optimization.</li>
+                    <li>Pro Business – $350: Premium + blog, analytics, newsletter.</li>
+                </ul>
+            </div>
+
+            <div class="package">
+                <h4>Brand Identity</h4>
+                <ul>
+                    <li>Starter – $100: Logo, palette, fonts, social design.</li>
+                    <li>Mini Social Kit – $20: 3 posts + 2 story templates.</li>
+                    <li>Pro Identity – $150: All above + labels, banners.</li>
+                    <li>Launch Kit – $200: Pro + deck, invoice, QR code.</li>
+                </ul>
+            </div>
+
+            <div class="package">
+                <h4>Email Marketing</h4>
+                <ul>
+                    <li>Starter – $1: 10 branded emails with stats.</li>
+                    <li>Bronze – $8: 1 campaign / 100 recipients.</li>
+                    <li>Silver – $18: 3 campaigns, 300 people.</li>
+                    <li>Gold – $35: 7 campaigns, automation + analytics.</li>
+                    <li>Add-Ons: Growth Strategy +$10, Mgmt +$30.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3 class="section-title">Ready to Start?</h3>
+            <p style="text-align:center; max-width:700px; margin: 0 auto;">
+                Reach out via <a href="mailto:inystudio1717@gmail.com">inystudio1717@gmail.com</a> to begin your custom package today.
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 iNY Creative Agency. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+
+</html>
