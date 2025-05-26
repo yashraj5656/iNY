@@ -15,36 +15,40 @@
         }
 
         body {
-            color: #333;
+            color: #0ff;
+            background-color: #000;
+            background-image: radial-gradient(circle at top left, #0ff3, transparent), radial-gradient(circle at bottom right, #00f3, transparent);
         }
 
         header {
-            background-color: #222;
-            color: #fff;
+            background-color: #111;
+            color: #0ff;
             padding: 20px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 1px solid #0ff;
         }
 
         header h1 {
-            color: #00bcd4;
             font-size: 2rem;
+            text-shadow: 0 0 10px #0ff;
         }
 
         header nav a {
-            color: #fff;
+            color: #0ff;
             margin-left: 20px;
             text-decoration: none;
             font-size: 1rem;
+            transition: color 0.3s;
         }
 
         header nav a:hover {
-            color: #00bcd4;
+            color: #fff;
         }
 
         .hero {
-            background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+            background: linear-gradient(to right, #000, #111);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -57,22 +61,25 @@
 
         .hero-text h2 {
             font-size: 3rem;
-            color: #333;
+            color: #0ff;
             margin-bottom: 20px;
+            text-shadow: 0 0 10px #0ff;
         }
 
         .hero-text p {
             font-size: 1.2rem;
             margin-bottom: 30px;
+            color: #ccc;
         }
 
         .hero-text button {
             padding: 10px 30px;
-            background-color: #00bcd4;
-            color: #fff;
+            background-color: #0ff;
+            color: #000;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            box-shadow: 0 0 10px #0ff;
         }
 
         .hero-image {
@@ -83,6 +90,7 @@
         .hero-image img {
             max-width: 400px;
             border-radius: 20px;
+            box-shadow: 0 0 20px #0ff;
         }
 
         section {
@@ -93,7 +101,8 @@
             text-align: center;
             font-size: 2rem;
             margin-bottom: 40px;
-            color: #222;
+            color: #0ff;
+            text-shadow: 0 0 5px #0ff;
         }
 
         .service-buttons {
@@ -104,8 +113,8 @@
         }
 
         .service-buttons div {
-            background-color: #00bcd4;
-            color: #fff;
+            background-color: #111;
+            color: #0ff;
             padding: 20px;
             border-radius: 50%;
             width: 100px;
@@ -115,19 +124,20 @@
             align-items: center;
             font-size: 0.9rem;
             text-align: center;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px #0ff;
         }
 
         .package {
-            background-color: #fff;
+            background-color: #111;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 15px #0ff5;
             margin-bottom: 30px;
+            color: #ccc;
         }
 
         .package h4 {
-            color: #0097a7;
+            color: #0ff;
             margin-bottom: 10px;
         }
 
@@ -139,14 +149,23 @@
         .package ul li::before {
             content: '✔';
             margin-right: 10px;
-            color: #00bcd4;
+            color: #0ff;
         }
 
         footer {
-            background-color: #222;
-            color: #fff;
+            background-color: #111;
+            color: #0ff;
             text-align: center;
             padding: 20px;
+            border-top: 1px solid #0ff;
+        }
+
+        a {
+            color: #0ff;
+        }
+
+        a:hover {
+            color: #fff;
         }
     </style>
 </head>
@@ -169,7 +188,7 @@
                 <button onclick="document.getElementById('packages').scrollIntoView({behavior: 'smooth'});">Get Started</button>
             </div>
             <div class="hero-image">
-                <img src="">
+                <img src="'>
             </div>
         </div>
 
